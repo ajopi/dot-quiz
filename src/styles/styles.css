@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* LOGIN PAGE */
+.loginPage {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: rgb(24, 24, 27);
+}
+
+.loginPage form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 25%;
+    height: 25vw;
+    gap: 10px;
+    /* background-color: aliceblue; */
+    padding: 1rem;
+    margin: auto;
+}
+
+.loginPage form h1 {
+    text-align: center;
+    color: white;
+}
+
+.loginPage form input.loginPage__input-username {
+    padding: 0.5rem 0.5rem 0.5rem 30px;
+    background-image: url('assets/user-solid.svg');
+    background-position: 10px;
+    background-repeat: no-repeat;
+    background-size: 15px;
+}
+
+.loginPage form input.loginPage__input-password {
+    padding: 0.5rem 0.5rem 0.5rem 30px;
+    background-image: url('assets/lock-solid.svg');
+    background-position: 10px;
+    background-repeat: no-repeat;
+    background-size: 15px;
+}
+
+.loginPage form button {
+    padding: 0.25rem;
+    font-size: large;
+    font-family: 'sans-serif';
+    margin-top: 1rem;
+}
+
+/* END of LOGIN PAGE */
+
+
+/* QUIZ PAGE */
+.quiz-page {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(24, 24, 27);
+    /* padding: 1rem; */
+}
+
+.quiz-page__timer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 1.5rem;
+    height: 10%;
+    background-color: rgb(24, 24, 27);
+    border-bottom: 1px solid rgb(102, 101, 101);
+}
+
+.quiz-page__timer p {
+    padding: 0.5rem;
+    border: 1px solid rgb(102, 101, 101);
+    border-radius: 4px;
+    width: 100px;
+    font-weight: 550;
+    color: white;
+    text-align: center;
+}
+
+.quiz-page__container-list-question {
+    height: 90%;
+    display: flex;
+    flex-direction: row;
+}
+
+.quiz-page__list-quiz {
+    width: 20%;
+    padding: 1.5rem 1rem 1rem 2rem;
+    border-right: 1px solid rgb(102, 101, 101);
+}
+
+.quiz-page ol {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-content: center;
+    gap: 1rem 1rem;
+}
+
+.quiz-page__list-quiz ol li {
+    list-style-type: none;
+    height: 40px;
+    width: 40px;
+    color: white;
+    border: 1px solid white;
+    align-content: center;
+    text-align: center;
+    margin-left: 0.5rem;
+}
+
+.quiz-page__question {
+    width: 80%;
+    display: flex;
+    /* background-color: blanchedalmond; */
+}
